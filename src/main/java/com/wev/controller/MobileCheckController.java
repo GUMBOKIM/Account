@@ -1,6 +1,6 @@
-package com.wev.domain.accounttimezone.controller;
+package com.wev.controller;
 
-import com.wev.domain.accounttimezone.service.AccountTimezoneService;
+import com.wev.domain.account.timezone.TimezoneService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/v1/timezone")
-public class AccountTimezoneController {
-    private final AccountTimezoneService accountTimezoneService;
+public class MobileCheckController {
+    private final TimezoneService accountTimezoneService;
 
     // 1. 타임존 업데이트 필요 여부 확인
     @GetMapping("/check")

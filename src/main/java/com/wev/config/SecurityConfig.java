@@ -1,4 +1,4 @@
-package com.wev.domain.config;
+package com.wev.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,6 +9,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.config.Customizer;
 
+// TODO: 주석달아 놓기
 @Configuration
 public class SecurityConfig {
 

@@ -1,4 +1,4 @@
-package com.wev.domain.accounttimezone.model;
+package com.wev.domain.account.timezone.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -14,15 +14,16 @@ import java.time.ZonedDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "ACCOUNT_TIMEZONE")
-public class AccountTimezone {
+public class AccountTimezoneEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long accountId;
 
-    // 타임존 ID (America/New_York, Asia/Seoul, Asia/Tokyo ...)
+    // TODO: String 쓰는거 지양하셈
+    @Column()
     private String timezone;
 
+    @Column()
     // 타임존 업데이트 유보 시간
     private ZonedDateTime updateDeferredUntil;
-
 }
