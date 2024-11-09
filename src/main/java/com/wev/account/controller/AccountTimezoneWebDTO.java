@@ -1,5 +1,7 @@
-package com.wev.account.domain.timezone.model;
+package com.wev.account.controller;
 
+import com.wev.account.domain.account.timezone.model.AccountTimezoneMapper;
+import com.wev.account.domain.account.timezone.model.AccountTimezoneServiceDTO;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,7 +17,6 @@ public class AccountTimezoneWebDTO {
     private AccountTimezoneWebDTO() {
         throw new IllegalStateException("Dto group class");
     }
-
 
     @Getter
     public static class UpdateWebReq {

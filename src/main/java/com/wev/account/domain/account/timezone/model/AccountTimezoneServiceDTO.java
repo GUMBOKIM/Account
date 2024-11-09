@@ -1,4 +1,4 @@
-package com.wev.account.domain.timezone.model;
+package com.wev.account.domain.account.timezone.model;
 
 import lombok.Builder;
 import lombok.Getter;

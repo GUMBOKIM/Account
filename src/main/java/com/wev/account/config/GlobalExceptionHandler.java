@@ -1,7 +1,7 @@
 package com.wev.account.config;
 
-import com.wev.account.domain.timezone.exception.AccountNotFoundException;
-import com.wev.account.domain.timezone.exception.TimezoneUpdateDeferredException;
+import com.wev.account.domain.account.timezone.exception.AccountNotFoundException;
+import com.wev.account.domain.account.timezone.exception.TimezoneUpdateDeferredException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
